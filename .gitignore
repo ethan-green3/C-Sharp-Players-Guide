@@ -1,0 +1,17 @@
+# Ignore generated output in every assignment folder
+[Bb]in/
+[Oo]bj/
+
+# Local IDE files
+.vs/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# Test output
+TestResults/
+
+# OS files
+.DS_Store
+Thumbs.db
