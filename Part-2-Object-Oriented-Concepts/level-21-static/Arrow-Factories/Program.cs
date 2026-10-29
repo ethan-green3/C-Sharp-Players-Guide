@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-Console.WriteLine("Press 1 for a list of predefined arrows or 2 to make your own");
+﻿Console.WriteLine("Press 1 for a list of predefined arrows or 2 to make your own");
 int choice = Convert.ToInt32(Console.ReadLine());
 while (choice < 1 || choice > 2)
 {
@@ -31,7 +29,7 @@ switch (choice)
             case 3:
                 newArrow = Arrow.CreateMarksmanArrow();
                 Console.WriteLine($"Your arrow cost {newArrow.GetCost()}");
-                break;                
+                break;
         }
         break;
     case 2:
@@ -73,9 +71,9 @@ switch (choice)
 
 class Arrow
 {
-    public ArrowheadType ArrowHead {get; set;}
-    public FletchingType FletchingType {get; set;}
-    public int Length {get; set;}
+    public ArrowheadType ArrowHead { get; set; }
+    public FletchingType FletchingType { get; set; }
+    public int Length { get; set; }
 
     public Arrow(ArrowheadType arrowhead, FletchingType fletchingType, int length)
     {
